@@ -130,7 +130,6 @@ int main(int argc, char *argv[]) {
 				if( setuid(getuid()) == -1){
 					exit(0);
 				}
-				setuid(getuid());
 				execve("/bin/sh", NULL, NULL);
 			
 
